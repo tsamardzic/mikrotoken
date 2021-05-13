@@ -8,6 +8,6 @@ Tanja Samardžić, gostujuće predavanje na kursu XXXX 24. 05. 2021.
 
 Od koliko reči se sastoji ova rečenica? 
 
-<img href="https://tube.switch.ch/videos/kk6E3wHDXv" src="BPE_0-5.png" alt="BPE steps" width="500"/>
+<a href="https://tube.switch.ch/videos/kk6E3wHDXv"><img src="BPE_0-5.png" alt="BPE steps" width="500"/></a>
 
 
