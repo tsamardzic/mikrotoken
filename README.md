@@ -1,6 +1,6 @@
 Tanja Samardžić, gostujuće predavanje na kursu XXXX 24. 05. 2021.
 
-#### (Mikro)tokenozacija teksta 
+# (Mikro)tokenozacija teksta 
 
 
 
