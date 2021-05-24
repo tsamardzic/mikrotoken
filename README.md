@@ -12,7 +12,7 @@ Izvor: [Khan Academuy](https://www.khanacademy.org/computing/computers-and-inter
 ---
 ### 1. Problem segmentacije teksta 
 
-U računarskoj obradi i analizi tekst se posmatra kao niska simbola _T_ gde svaki simbol pripada skupu _V_ koji zovemo vokabular ili alfabet bez obzira na to kako se elementi definišu. Ako uzmemo da se alfabet sastoji od reči, onda je tekst niska reči. Ako su elementi slova, onda je tekst niska slova itd.  
+U računarskoj obradi i analizi tekst se posmatra kao niska simbola _T_ gde svaki simbol pripada skupu _V_ koji zovemo vokabular ili alfabet bez obzira na to kako se elementi definišu. Ako uzmemo da se alfabet sastoji od reči, onda je tekst niska reči; ako su elementi slova, onda je tekst niska slova itd.  
 
 **Važno:** alfabet ``!=`` skup slova!
 
@@ -24,8 +24,7 @@ Definisanje alfabeta se često uzima kao nešto trivijalno, nešto što se može
 <br>
 <br>
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/m8niIHChc1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href="https://youtu.be/m8niIHChc1Y"><img src="word-video.png" alt="word video" width="570"/></a>
 
 <br>
 <br>
@@ -48,16 +47,53 @@ Od koliko reči se sastoji ova rečenica?
 |Kod|računara|sve|može |posmatratise|kao       |"rekla-kazala"|dokaz.        |            |     |      |    |     |    |
 
 
+Važne pouke:
+
+- Svi odgovori su na neki način tačni
+- Od toga kako definišemo alfabet zavisi
+  - dužina teksta 
+  - frekvencija tokena u tekstu 
+
+---
+
+### 2. Problem retkih reči i mikrotokenizacija
+
+
+<img src="ex_eq.jpeg" alt="data types" width="330"/>
+<img src="ex_zipf.jpeg" alt="data-represent" width="330"/>
+
+Verovatnoća da se neki simbol pojavi u tekstu je, zapravo, srazmerna dužini simbola, koju obično izražavamo brojem slova. U našem (konstruisanom) primeru simbol `the` je najkraći i njegova verovatnoća je najveća. S druge strane, imamo, na primer, simbol `heaven` koji je znatno duži i ređi (manja verovatnoća). 
+
+Ako tekst posmatramo kao kôd u smislu __teorije informacija__, onda odnos između dužine simbola i njegove verovatnoće proističe iz komunikativne efikasnosti jezika. Ovaj odnos je pokazao __Zipf__ još davne 1949![1] Da pojednostavimo, zbog komunikativne efikasnosti jezika, kratke reči ćemo viđati često u bilo kom tekstu i moći ćemo da procenimo njihovu verovatnoću, dok će duge reči biti retke. Retko pojavljivanje reči predstavlja problem za obradu jezika ne samo zato što je teško proceniti njihovu verovatnoću, već i zato što su izvor nepoznatih simbola za trenirane modele. Koliko god da je veliki set podataka za treniranje modela, uvek će veliki broj reči ostati van njega i time biti nepoznat modelu. 
+
+
+Koja dužina reči je najuobičajenija u jezicima?  
+
+<img src="mwl_wiki.png" alt="mwl" width="420"/>
+
+
+A u srpskom?
+
+Generalno, jezici koji imaju razvijenu morfologiju imaju duže reči
+
+
+---
+
+### 3. Algoritmi za mikrotokenizaciju
+
+
+<img src="BPE_Morf.jpg" alt="data-represent" width="1020"/>
+
+
 <a href="https://tube.switch.ch/videos/kk6E3wHDXv"><img src="BPE_0-5.png" alt="BPE steps" width="500"/></a>
 
-### 2. Problem retkih reči 
 
-### 3. Mikrotokenizacija i diskretna reprezentacija teksta
+### 4. Mikrotokenizacija u diskretnoj i kontinualnoj reprezentacija teksta
 
-### 4. Mikrotokenizacija i kontinualna reprezentacija teksta
 
 ### 5. Dužina mikrotokena
 
 
+\[1\]: George Kingsley Zipf (1949), Human behavior and the principle of least effort, Addison-Wesley Press
 
 
