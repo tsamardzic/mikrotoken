@@ -22,7 +22,7 @@ U računarskoj obradi i analizi tekst se posmatra kao **niska simbola** *T* gde 
 <img src="figures/Text_basics.png" alt="data types" width="600"/>
 
 
-Segmentacija teksta se naziva **tokenizacija** i može se uporediti sa segmentacijom slike na piksele ili sa segmentacijom zvuka na kratke okvire (engl. *frames*). Niska simbola je, dakle, niska **tokena**, koji su jedinice obrade teksta na sličan način kao pikseli u obradi slike i kratki okviri u obradi zvuka. Svako ograničeno polje u ilustraciji gore je po jedan token, sadržaj polja je simbol ili član skupa *V* ili element alfabeta (ova tri izraza su sinonimi).  
+Segmentacija teksta se naziva **tokenizacija** i može se uporediti sa segmentacijom slike na piksele ili sa segmentacijom zvuka na prozore (engl. *frames*). Niska simbola je, dakle, niska **tokena**, koji su jedinice obrade teksta na sličan način kao pikseli u obradi slike i prozori u obradi zvuka. Svako ograničeno polje u ilustraciji gore je po jedan token, sadržaj polja je simbol ili član skupa *V* ili element alfabeta (ova tri izraza su sinonimi).  
 
 Za razliku od slike i zvuka, segmentaciji teksta se obično pristupa sa manje opreza. Definisanje alfabeta se često uzima kao nešto trivijalno; podrazumeva se da je alfabet skup **reči** i da se tekst jednostavno deli na reči. Podrazumevanje da su reči jasno razgraničeni tokeni je dosta problematična zabluda na koju lingvisti poprilično bezuspešno upozoravaju već duže vreme. Ovaj klip na engleskom objašnjava u čemu je problem. 
 <br>
